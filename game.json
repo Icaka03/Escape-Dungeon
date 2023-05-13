@@ -1425,6 +1425,15 @@
         "name": "4.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/chest.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\chest.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2440,7 +2449,13 @@
       "width": 32,
       "variables": [],
       "effects": [],
-      "behaviors": []
+      "behaviors": [
+        {
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
+        }
+      ]
     },
     {
       "assetStoreId": "",
@@ -2782,7 +2797,13 @@
       "width": 32,
       "variables": [],
       "effects": [],
-      "behaviors": []
+      "behaviors": [
+        {
+          "name": "Draggable",
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
+        }
+      ]
     },
     {
       "assetStoreId": "",
@@ -4518,7 +4539,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6455105703311648,
+        "zoomFactor": 0.49508400737490166,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -7896,7 +7917,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.061571430522005,
+        "zoomFactor": 0.6897782140104547,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -9515,8 +9536,8 @@
           "name": "NewSprite2",
           "persistentUuid": "f7997e35-4876-421a-8302-2a0cd780c14b",
           "width": 0,
-          "x": 737,
-          "y": 190,
+          "x": 738,
+          "y": 179,
           "zOrder": 148,
           "numberProperties": [],
           "stringProperties": [],
@@ -9716,7 +9737,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Press E",
+          "string": "Press \"E\" to interact",
           "font": "ArchitectsDaughter.ttf",
           "textAlignment": "left",
           "characterSize": 20,
@@ -9738,7 +9759,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "The key is in the basement on my right.\nThere you will see how to get it",
+          "string": "Strange Woman: The key is in the basement on my right.\nThere you will see how to get it",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -10606,8 +10627,8 @@
               "parameters": [
                 "",
                 "dialog",
-                "female.PointX(\"\") + 50",
-                "female.PointY(\"top\") + 250",
+                "female.PointX(\"\") -100",
+                "female.PointY(\"top\") + 300",
                 "\"Interactions\""
               ]
             },
@@ -10737,8 +10758,8 @@
               "parameters": [
                 "",
                 "dialog2",
-                "female.PointX(\"\") + 50",
-                "female.PointY(\"top\") + 200",
+                "female.PointX(\"\") -100",
+                "female.PointY(\"top\") + 300",
                 "\"Interactions\""
               ]
             },
@@ -10798,6 +10819,50 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Puzlle_scene",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Hero",
+                "=",
+                "532",
+                "=",
+                "229"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Puzlle_scene",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -10881,7 +10946,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.9296875000000014,
+        "zoomFactor": 0.9610368693714736,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -10910,8 +10975,8 @@
           "name": "black",
           "persistentUuid": "d14633d2-4c48-4a22-a430-57f1262d8d7a",
           "width": 344,
-          "x": 34,
-          "y": -28,
+          "x": 267,
+          "y": -8,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -11233,15 +11298,15 @@
           "initialVariables": []
         },
         {
-          "angle": 180,
+          "angle": 90,
           "customSize": true,
           "height": 14,
           "layer": "",
           "name": "wall_8",
           "persistentUuid": "a023775b-7951-4a29-a2af-049a70110a48",
           "width": 567,
-          "x": 622,
-          "y": 560,
+          "x": 335,
+          "y": 352,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -11270,7 +11335,7 @@
           "name": "black",
           "persistentUuid": "83e96f15-b016-41c8-87ed-6e508e48fcd3",
           "width": 581,
-          "x": 628,
+          "x": 626,
           "y": 140,
           "zOrder": 6,
           "numberProperties": [],
@@ -11801,9 +11866,103 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 30,
+          "layer": "",
+          "name": "chest",
+          "persistentUuid": "080a47ed-83e2-48d7-b76d-80a754169fc5",
+          "width": 41,
+          "x": 735,
+          "y": 318,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "height": 14,
+          "layer": "",
+          "name": "wall_8",
+          "persistentUuid": "1aa9cc43-b738-4339-af7b-dc94adbdaa26",
+          "width": 567,
+          "x": 622,
+          "y": 560,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
-      "objects": [],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "chest",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\chest.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "dialog",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Press \"E\" to interact",
+          "font": "ArchitectsDaughter.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -12165,6 +12324,262 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Hero",
+                "wall_8",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Hero",
+                "wall_8",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Hero",
+                "chest",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Hero",
+                "chest",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Hero",
+                    "chest",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "eCount",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "dialog",
+                "chest.PointX(\"\") -180",
+                "chest.PointY(\"top\") +250",
+                "\"Interactions\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Interactions\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Hero",
+                "chest",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "eCount",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Interactions\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Hero",
+                    "chest",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "e",
+                    "e"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"puzlle-game\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Puzlle_scene",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Hero",
+                "maze",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Key room\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Puzlle_scene",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": []
         }
@@ -12201,6 +12616,238 @@
           "name": "Lighting",
           "visibility": true,
           "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 9576848,
+          "ambientLightColorG": 6069792,
+          "ambientLightColorR": 9527816,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Interactions",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        },
+        {
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "puzlle_45game",
+      "name": "puzlle-game",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.5653158055126308,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "name": "brick_floor",
+          "persistentUuid": "6edcccf0-7491-4803-972d-c2b8f693203b",
+          "width": 200,
+          "x": 110,
+          "y": 102,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "name": "floor",
+          "persistentUuid": "c9eb0ca7-b07c-4652-8416-3550ee9a6cae",
+          "width": 200,
+          "x": 558,
+          "y": 99,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "name": "tiles",
+          "persistentUuid": "5a2ddf38-8981-4e50-a57f-f3d4abafff2e",
+          "width": 200,
+          "x": 558,
+          "y": 199,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 100,
+          "layer": "",
+          "name": "blue_tiles",
+          "persistentUuid": "0c7800cb-eb3e-434a-8d23-1e580e5e4d8e",
+          "width": 200,
+          "x": 106,
+          "y": 366,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "brick_floor",
+                    ">",
+                    "floor.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "brick_floor",
+                    ">",
+                    "floor.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "blue_tiles",
+                    ">",
+                    "tiles.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "blue_tiles",
+                    ">",
+                    "tiles.Y()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Menu\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CenterY"
+              },
+              "parameters": [
+                "brick_floor",
+                "=",
+                "floor.CenterY()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Menu\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 10017152,
+          "ambientLightColorG": 10017152,
+          "ambientLightColorR": 1869182049,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
           "effects": []
         }
       ],
