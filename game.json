@@ -1229,7 +1229,7 @@
         "alwaysLoaded": false,
         "file": "assets/Green Button With Shadow_Hovered.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Green Button With Shadow_Hovered.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "Green Button With Shadow_Hovered.png",
         "smoothed": false,
         "userAdded": false,
@@ -1242,7 +1242,7 @@
         "alwaysLoaded": false,
         "file": "assets/Green Button With Shadow_Idle.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Green Button With Shadow_Idle.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "Green Button With Shadow_Idle.png",
         "smoothed": false,
         "userAdded": false,
@@ -1255,7 +1255,7 @@
         "alwaysLoaded": false,
         "file": "assets/Green Button With Shadow_Pressed.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Green Button With Shadow_Pressed.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "Green Button With Shadow_Pressed.png",
         "smoothed": false,
         "userAdded": false,
@@ -1434,6 +1434,82 @@
         "name": "assets\\chest.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "45908-min.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "45908-min.jpg",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "45908-min (1).jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "45908-min (1).jpg",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "45908-min (2).jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "45908-min (2).jpg",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "45908-min (3).jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "45908-min (3).jpg",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Close round button.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Close round button.png\",\"extension\":\".png\"}",
+        "name": "Close round button.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Flat Dark/2e80259c0d8278d32ac2e675949da256f7be42e52e81a4576672e352eaa67305_Close round button.png",
+          "name": "Close round button.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/piece1_blank.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "piece1_blank",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3767,6 +3843,70 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "569b45d3c7c34f7706563239938d04ca599016ff9857ee38c945c72330d4339e",
+      "name": "GreenButtonWithShadow",
+      "tags": "",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Green Button With Shadow_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Green Button With Shadow_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "X",
+          "font": "CantoraOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Green Button With Shadow_Pressed.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        }
+      }
     }
   ],
   "objectsGroups": [],
@@ -7675,70 +7815,6 @@
             "b": 27,
             "g": 2,
             "r": 208
-          }
-        },
-        {
-          "assetStoreId": "569b45d3c7c34f7706563239938d04ca599016ff9857ee38c945c72330d4339e",
-          "name": "GreenButtonWithShadow",
-          "tags": "",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 3,
-            "BottomPadding": 32,
-            "TopPadding": 32,
-            "HoveredFadeOutDuration": 0.25
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 16,
-              "height": 69,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Green Button With Shadow_Hovered.png",
-              "tiled": true,
-              "topMargin": 16,
-              "width": 192
-            },
-            "Idle": {
-              "bottomMargin": 16,
-              "height": 69,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Green Button With Shadow_Idle.png",
-              "tiled": true,
-              "topMargin": 16,
-              "width": 192
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "Try Again",
-              "font": "CantoraOne-Regular.ttf",
-              "textAlignment": "center",
-              "characterSize": 60,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 16,
-              "height": 69,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Green Button With Shadow_Pressed.png",
-              "tiled": true,
-              "topMargin": 16,
-              "width": 192
-            }
           }
         },
         {
@@ -12665,7 +12741,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5653158055126308,
+        "zoomFactor": 0.7619362677197624,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -12674,28 +12750,28 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 100,
+          "height": 1065,
           "layer": "",
-          "name": "brick_floor",
-          "persistentUuid": "6edcccf0-7491-4803-972d-c2b8f693203b",
-          "width": 200,
-          "x": 110,
-          "y": 102,
-          "zOrder": 3,
+          "name": "black_bg",
+          "persistentUuid": "86b8a8dd-21e7-4650-84e8-60e8acc2380e",
+          "width": 1728,
+          "x": -254,
+          "y": -160,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
           "angle": 0,
-          "customSize": true,
-          "height": 100,
+          "customSize": false,
+          "height": 0,
           "layer": "",
-          "name": "floor",
-          "persistentUuid": "c9eb0ca7-b07c-4652-8416-3550ee9a6cae",
-          "width": 200,
-          "x": 558,
-          "y": 99,
+          "name": "Instructions",
+          "persistentUuid": "8634984d-b3c9-419c-879e-eeed9155e338",
+          "width": 0,
+          "x": 209,
+          "y": 34,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -12704,14 +12780,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 100,
+          "height": 120,
           "layer": "",
-          "name": "tiles",
-          "persistentUuid": "5a2ddf38-8981-4e50-a57f-f3d4abafff2e",
-          "width": 200,
-          "x": 558,
-          "y": 199,
-          "zOrder": 4,
+          "name": "piece1",
+          "persistentUuid": "08af1e52-7fdb-4f79-a8cc-75daaf8d6851",
+          "width": 190,
+          "x": 716,
+          "y": 254,
+          "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12719,21 +12795,605 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 100,
+          "height": 120,
           "layer": "",
-          "name": "blue_tiles",
-          "persistentUuid": "0c7800cb-eb3e-434a-8d23-1e580e5e4d8e",
-          "width": 200,
-          "x": 106,
-          "y": 366,
-          "zOrder": 5,
+          "name": "piece2",
+          "persistentUuid": "d1f01982-ba18-4157-b581-136a114e94f9",
+          "width": 190,
+          "x": 868,
+          "y": 287,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 120,
+          "layer": "",
+          "name": "piece3",
+          "persistentUuid": "e325c0eb-b7ba-48fa-b0fe-13dc10818003",
+          "width": 190,
+          "x": 176,
+          "y": 494,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 120,
+          "layer": "",
+          "name": "piece4",
+          "persistentUuid": "df78743a-b184-4712-9e6b-d63b08faf7c7",
+          "width": 190,
+          "x": 1016,
+          "y": 289,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 249,
+          "layer": "",
+          "name": "lines",
+          "persistentUuid": "9e2e3509-0dea-4135-ac7e-0e25eb719e46",
+          "width": 392,
+          "x": 171,
+          "y": 153,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 120,
+          "layer": "",
+          "name": "piece1_blank",
+          "persistentUuid": "7b1b304d-c07f-4b69-b600-6b6d3d0795bf",
+          "width": 190,
+          "x": 177,
+          "y": 157,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 120,
+          "layer": "",
+          "name": "piece2_blank",
+          "persistentUuid": "47a3e1b8-0b49-46af-92ff-2dd7adeaef95",
+          "width": 190,
+          "x": 367,
+          "y": 157,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 120,
+          "layer": "",
+          "name": "piece3_blank",
+          "persistentUuid": "31d3f745-c6a5-46e8-bcc0-8f4c7c392eb9",
+          "width": 190,
+          "x": 177,
+          "y": 278,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 120,
+          "layer": "",
+          "name": "piece4_blank",
+          "persistentUuid": "87bd0798-9b90-43dc-bd30-a762da2bbd64",
+          "width": 190,
+          "x": 367,
+          "y": 278,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 69,
+          "layer": "",
+          "name": "GreenButtonWithShadow",
+          "persistentUuid": "d70ff909-db56-4095-a154-fdd7fba4f09c",
+          "width": 78,
+          "x": 58,
+          "y": 48,
+          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         }
       ],
-      "objects": [],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "black_bg",
+          "tags": "",
+          "texture": "New image6",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Instructions",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Put the puzzle together to open the chest",
+          "font": "ArchitectsDaughter.ttf",
+          "textAlignment": "left",
+          "characterSize": 35,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "piece1",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "checkCollisionMask": true,
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "45908-min.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "piece2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "checkCollisionMask": true,
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "45908-min (1).jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "piece3",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "checkCollisionMask": true,
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "45908-min (2).jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "piece4",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "checkCollisionMask": true,
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "45908-min (3).jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "lines",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewSprite3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "piece1_blank",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "piece1_blank",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "piece1_blank",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "piece2_blank",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "piece1_blank",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "piece1_blank",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "piece3_blank",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "piece1_blank",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "piece1_blank",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "piece4_blank",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "piece1_blank",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "piece1_blank",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "GreenButtonWithShadow",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"puzzle\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -12748,19 +13408,9 @@
                     "value": "PosX"
                   },
                   "parameters": [
-                    "brick_floor",
+                    "piece2",
                     ">",
-                    "floor.X()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PosY"
-                  },
-                  "parameters": [
-                    "brick_floor",
-                    ">",
-                    "floor.Y()"
+                    "364"
                   ]
                 },
                 {
@@ -12768,9 +13418,99 @@
                     "value": "PosX"
                   },
                   "parameters": [
-                    "blue_tiles",
+                    "piece2",
+                    "<",
+                    "368"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "pieceCount",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "piece1",
                     ">",
-                    "tiles.X()"
+                    "174"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "piece1",
+                    "<",
+                    "178"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "pieceCount1",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "piece3",
+                    ">",
+                    "174"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "piece3",
+                    "<",
+                    "178"
                   ]
                 },
                 {
@@ -12778,9 +13518,184 @@
                     "value": "PosY"
                   },
                   "parameters": [
-                    "blue_tiles",
+                    "piece3",
+                    "<",
+                    "279"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "piece3",
                     ">",
-                    "tiles.Y()"
+                    "276"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "pieceCount2",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "piece4",
+                    ">",
+                    "364"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "piece4",
+                    "<",
+                    "368"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "piece4",
+                    "<",
+                    "279"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "piece4",
+                    ">",
+                    "276"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "pieceCount3",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "piece1",
+                    ">",
+                    "178"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "pieceCount1",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "pieceCount1",
+                    ">",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "pieceCount",
+                    ">",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "pieceCount2",
+                    ">",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "pieceCount3",
+                    ">",
+                    "0"
                   ]
                 }
               ]
@@ -12793,7 +13708,7 @@
               },
               "parameters": [
                 "",
-                "\"Menu\"",
+                "\"puzzle\"",
                 ""
               ]
             }
@@ -12804,27 +13719,52 @@
           "conditions": [
             {
               "type": {
-                "value": "CenterY"
+                "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [
-                "brick_floor",
-                "=",
-                "floor.CenterY()"
+              "parameters": []
+            }
+          ],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "piece3",
+                    ">",
+                    "279"
+                  ]
+                }
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Scene"
+                "value": "ModVarScene"
               },
               "parameters": [
-                "",
-                "\"Menu\"",
-                ""
+                "pieceCount2",
+                "=",
+                "0"
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
